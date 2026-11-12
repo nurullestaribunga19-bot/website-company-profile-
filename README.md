@@ -6,8 +6,8 @@ Website company profile untuk UMKM **Jabutas (By Sabina Collection)** - Tas Ulos
 
 | Data | Detail |
 |------|--------|
-| **Nama** | [ISI NAMA ANDA] |
-| **NIM** | [ISI NIM ANDA] |
+| **Nama** | Bunga Nurul Lestari |
+| **NIM** | 240103011 |
 | **Mata Kuliah** | Bisnis Digital - Semester 5 |
 | **Tema Tugas** | Menu, Sub Menu, dan Teks |
 
@@ -22,26 +22,7 @@ Website company profile untuk UMKM **Jabutas (By Sabina Collection)** - Tas Ulos
 ## 🌐 Link Website Hasil Deploy
 
 **GitHub Pages:** `https://[USERNAME].github.io/[REPO-NAME]/`  
-*(Ganti dengan URL GitHub Pages Anda setelah deploy)*
 
-**Vercel (Alternative):** `https://jabutas.vercel.app/`  
-*(Website lama sebagai referensi)*
-
-## 📸 Screenshot Tampilan Website
-
-### Beranda (Home)
-![Home Page](screenshots/home.png)
-
-### Tentang Kami (About)
-![About Page](screenshots/about.png)
-
-### Produk (Products)
-![Products Page](screenshots/produk.png)
-
-### Kontak (Contact)
-![Contact Page](screenshots/kontak.png)
-
-*(Simpan screenshot di folder `screenshots/` dan commit ke repository)*
 
 ## 🗂️ Struktur File
 
@@ -96,27 +77,6 @@ jabutas-website/
 - **Google Fonts** - Playfair Display (serif) + Plus Jakarta Sans (sans)
 - **GitHub Pages** - Hosting gratis
 
-## 🚀 Cara Deploy ke GitHub Pages
-
-1. **Buat repository baru di GitHub** (public)
-2. **Clone repository** ke lokal:
-   ```bash
-   git clone https://github.com/[USERNAME]/[REPO-NAME].git
-   ```
-3. **Copy semua file** project ke folder repository
-4. **Commit & push**:
-   ```bash
-   git add .
-   git commit -m "Initial commit: Jabutas company profile website"
-   git push origin main
-   ```
-5. **Aktifkan GitHub Pages**:
-   - Buka Settings > Pages
-   - Source: Deploy from a branch
-   - Branch: `main` / `root`
-   - Save
-6. **Tunggu 1-2 menit**, website akan tersedia di `https://[USERNAME].github.io/[REPO-NAME]/`
-
 ## 📱 Fitur Interaktif
 
 1. **Responsive Navbar** - Desktop dropdown hover, Mobile hamburger + accordion
@@ -139,19 +99,3 @@ jabutas-website/
 **Tipografi:**
 - Heading: Playfair Display (Serif, elegant)
 - Body: Plus Jakarta Sans (Sans-serif, readable)
-
-## 📝 Catatan Pengembangan
-
-- Semua gambar menggunakan Unsplash placeholder (ganti dengan foto asli produk)
-- Form kontak bersifat simulasi (frontend only), belum terhubung ke backend
-- Google Maps embed menggunakan koordinat Medan umum (ganti dengan lokasi asli)
-- Kode diorganisir modular: CSS & JS terpisah, reusable di semua halaman
-
-## 📄 Lisensi
-
-Website ini dibuat untuk keperluan tugas mata kuliah **Bisnis Digital Semester 5**.  
-Hak cipta konten & desain: **Jabutas / Sabina Collection**.
-
----
-
-**Dibuat dengan ❤️ untuk UMKM Indonesia**
