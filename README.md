@@ -40,34 +40,6 @@ jabutas-website/
 └── README.md           # File ini
 ```
 
-## ✅ Checklist Ketentuan Tugas
-
-### A. Ketentuan Konten (Teks)
-- [x] **Beranda**: Judul utama UMKM, paragraf deskripsi (3+ kalimat), tagline/slogan
-- [x] **Tentang Kami**: Sejarah (2+ paragraf + blockquote), Visi (3 poin), Misi (4 poin), Struktur organisasi (4 kartu)
-- [x] **Produk**: 6 produk dengan judul & deskripsi (2+ kalimat per produk)
-- [x] **Kontak**: Alamat, telepon, email, media sosial, form kontak (nama, email, pesan)
-
-### B. Ketentuan Menu dan Sub Menu
-- [x] **4 Menu Utama**: Beranda, Tentang Kami, Produk, Kontak
-- [x] **Sub Menu** pada "Tentang Kami" (Sejarah, Visi & Misi, Struktur & Pemilik)
-- [x] **Sub Menu** pada "Produk" (Semua, Handbag, Slingbag, Pouch & Custom)
-- [x] **Dropdown Hover** di desktop
-- [x] **Hamburger Menu** responsif di mobile dengan accordion sub menu
-
-### C. Ketentuan Teknis
-- [x] HTML, CSS, JavaScript (Tailwind CSS via CDN)
-- [x] Responsif (Desktop & Mobile)
-- [x] Struktur file rapi (html terpisah, folder css/, js/, img/)
-- [x] Tipografi web (heading, paragraf, list, blockquote, semantic HTML)
-- [x] Deploy ke GitHub Pages / Vercel
-
-### D. Ketentuan Pengumpulan
-- [ ] Repository GitHub dibuat
-- [ ] Website di-deploy ke GitHub Pages
-- [ ] README.md lengkap (file ini)
-- [ ] Screenshot disertakan
-
 ## 🛠️ Teknologi yang Digunakan
 
 - **HTML5** - Semantic markup
