@@ -21,7 +21,7 @@ Website company profile untuk UMKM **Jabutas (By Sabina Collection)** - Tas Ulos
 
 ## 🌐 Link Website Hasil Deploy
 
-**GitHub Pages:** `https://[USERNAME].github.io/[REPO-NAME]/`  
+**GitHub Pages:** `https://nurullestaribunga19-bot.github.io/website-company-profile-/`  
 
 
 ## 🗂️ Struktur File
