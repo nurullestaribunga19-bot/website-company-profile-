@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak · Jabutas Tas Ulos Handmade</title>
+    <meta name="description" content="Hubungi Jabutas (By Sabina Collection) untuk pemesanan tas Ulos, custom souvenir, grosir, atau konsultasi desain. Alamat workshop Medan, WhatsApp, email, dan media sosial.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    },
+                    colors: {
+                        wastra: {
+                            50: '#fdf8f6', 100: '#f9ebe6', 200: '#f3d5ca', 300: '#e9b5a3',
+                            400: '#dc8b70', 500: '#cc6849', 600: '#b55033', 700: '#973f27',
+                            800: '#7d3623', 900: '#672f21', 950: '#38150d',
+                        },
+                        emas: { 500: '#d4af37', 600: '#b89427' }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased selection:bg-wastra-600 selection:text-white">
+
+    <!-- ==================== NAVBAR UTAMA (Floating Pill) ==================== -->
+    <header class="floating-navbar">
+        <div class="nav-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20">
+            <a href="index.html" class="nav-brand">
+                <img src="img/LogoJabutas.png" alt="Jabutas Logo">
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-1" aria-label="Navigasi Utama">
+                <a href="index.html" class="nav-link">Beranda</a>
+                <div class="nav-item group">
+                    <button class="nav-link">Tentang Kami <i data-lucide="chevron-down" class="chevron"></i></button>
+                    <div class="dropdown-menu">
+                        <a href="about.html#sejarah" class="dropdown-link">
+                            <i data-lucide="book-open" class="dropdown-icon"></i>
+                            <div><p class="dropdown-title">Sejarah UMKM</p><p class="dropdown-desc">Perjalanan sejak 2017 & filosofi Ulos</p></div>
+                        </a>
+                        <a href="about.html#visi-misi" class="dropdown-link">
+                            <i data-lucide="target" class="dropdown-icon"></i>
+                            <div><p class="dropdown-title">Visi & Misi</p><p class="dropdown-desc">Tujuan & komitmen pelestarian wastra</p></div>
+                        </a>
+                        <a href="about.html#profil-pemilik" class="dropdown-link">
+                            <i data-lucide="users" class="dropdown-icon"></i>
+                            <div><p class="dropdown-title">Struktur & Pemilik</p><p class="dropdown-desc">Tim pengrajin & pendiri Sabina</p></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-item group">
+                    <button class="nav-link">Produk <i data-lucide="chevron-down" class="chevron"></i></button>
+                    <div class="dropdown-menu">
+                        <a href="produk.html#semua" class="dropdown-link">
+                            <i data-lucide="sparkles" class="dropdown-icon"></i>
+                            <div><p class="dropdown-title">Semua Koleksi Tas</p><p class="dropdown-desc">Katalog lengkap tenun nusantara</p></div>
+                        </a>
+                        <a href="produk.html#handbag" class="dropdown-link">
+                            <i data-lucide="shopping-bag" class="dropdown-icon"></i>
+                            <div><p class="dropdown-title">Tas Tangan (Handbag)</p><p class="dropdown-desc">Elegan untuk acara formal & pesta</p></div>
+                        </a>
+                        <a href="produk.html#slingbag" class="dropdown-link">
+                            <i data-lucide="briefcase" class="dropdown-icon"></i>
+                            <div><p class="dropdown-title">Tas Selempang & Harian</p><p class="dropdown-desc">Praktis untuk kuliah, kerja & hangout</p></div>
+                        </a>
+                        <a href="produk.html#aksesoris" class="dropdown-link">
+                            <i data-lucide="gift" class="dropdown-icon"></i>
+                            <div><p class="dropdown-title">Pouch & Souvenir Custom</p><p class="dropdown-desc">Cenderamata khas Sumatera Utara</p></div>
+                        </a>
+                    </div>
+                </div>
+                <a href="kontak.html" class="nav-link active">Kontak</a>
+            </nav>
+
+            <a href="kontak.html" class="nav-cta hidden md:flex">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>Pesan Custom</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================== HALAMAN KONTAK ==================== -->
+        <section id="kontak" class="py-20 bg-white scroll-mt-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-2xl mx-auto mb-14 space-y-3 animate-fade-in-up">
+                    <span class="text-xs font-bold uppercase tracking-widest text-wastra-600">Hubungi Kami</span>
+                    <h1 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">Siap Melayani Anda</h1>
+                    <p class="text-stone-600 text-base">Punya pertanyaan seputar ketersediaan motif Ulos, pemesanan grosir, atau pembuatan tas custom? Silakan hubungi kami melalui informasi atau formulir di bawah ini.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                    
+                    <!-- Kolom Informasi Kontak Lengkap -->
+                    <div class="lg:col-span-5 bg-wastra-950 text-white p-8 sm:p-10 rounded-3xl shadow-xl space-y-8 animate-fade-in-up">
+                        <div>
+                            <h2 class="font-serif text-2xl font-bold">Informasi Galeri & Kontak</h2>
+                            <p class="text-wastra-200 text-sm mt-1">UMKM Jabutas By Sabina Collection</p>
+                        </div>
+
+                        <div class="space-y-6 text-sm">
+                            <!-- Alamat -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-wastra-800 flex items-center justify-center shrink-0">
+                                    <i data-lucide="map-pin" class="w-5 h-5 text-wastra-300"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-white">Alamat Workshop & Galeri</p>
+                                    <p class="text-wastra-200 mt-1 leading-relaxed">Jl. Setia Budi / Komplek Sabina Collection, Kota Medan, Sumatera Utara 20132, Indonesia</p>
+                                </div>
+                            </div>
+
+                            <!-- Nomor Telepon / WhatsApp -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-wastra-800 flex items-center justify-center shrink-0">
+                                    <i data-lucide="phone" class="w-5 h-5 text-wastra-300"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-white">Telepon & WhatsApp</p>
+                                    <p class="text-wastra-200 mt-1">+62 812-6000-8899 (Senin – Sabtu, 09.00 – 18.00 WIB)</p>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-wastra-800 flex items-center justify-center shrink-0">
+                                    <i data-lucide="mail" class="w-5 h-5 text-wastra-300"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-white">Alamat Email</p>
+                                    <p class="text-wastra-200 mt-1">halo@jabutas-wastra.id</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Media Sosial & Marketplace -->
+                        <div class="pt-6 border-t border-wastra-800">
+                            <p class="text-xs font-bold uppercase tracking-wider text-wastra-300 mb-4">Media Sosial & Toko Online</p>
+                            <div class="flex flex-wrap gap-3">
+                                <a href="https://instagram.com/jabutas.official" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-wastra-800 hover:bg-wastra-700 text-xs font-semibold transition-colors">
+                                    <i data-lucide="instagram" class="w-4 h-4"></i>
+                                    <span>@jabutas.official</span>
+                                </a>
+                                <a href="https://tiktok.com/@jabutas" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-wastra-800 hover:bg-wastra-700 text-xs font-semibold transition-colors">
+                                    <i data-lucide="music-2" class="w-4 h-4"></i>
+                                    <span>TikTok @jabutas</span>
+                                </a>
+                                <a href="https://shopee.co.id/jabutas" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-wastra-800 hover:bg-wastra-700 text-xs font-semibold transition-colors">
+                                    <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                                    <span>Shopee Jabutas</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Info Tambahan -->
+                        <div class="pt-4 border-t border-wastra-800 bg-wastra-900/50 rounded-xl p-4">
+                            <p class="text-xs text-wastra-300"><strong>Catatan:</strong> Kami menerima pesanan dari seluruh Indonesia via kurir JNE/J&T/SiCepat. Untuk custom order, minimal MOQ 10 pcs dengan estimasi produksi 7-14 hari kerja.</p>
+                        </div>
+                    </div>
+
+                    <!-- Kolom Form Kontak -->
+                    <div class="lg:col-span-7 bg-stone-50 p-8 sm:p-10 rounded-3xl border border-stone-200 animate-fade-in-up delay-100">
+                        <h2 class="font-serif text-2xl font-bold text-stone-900 mb-2">Kirim Pesan Langsung</h2>
+                        <p class="text-sm text-stone-600 mb-6">Isi formulir singkat berikut dan tim admin Jabutas akan segera merespons pertanyaan Anda.</p>
+
+                        <!-- Box Notifikasi Sukses (Pengganti alert() yang ramah UI) -->
+                        <div id="form-feedback" class="hidden mb-6 p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-sm flex items-start gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5"></i>
+                            <div>
+                                <p class="font-bold">Terima kasih! Pesan Anda telah dicatat.</p>
+                                <p id="form-feedback-detail" class="text-xs mt-1 text-emerald-700"></p>
+                            </div>
+                        </div>
+
+                        <form id="contact-form" class="space-y-5" novalidate>
+                            <div>
+                                <label for="nama" class="block text-sm font-semibold text-stone-800 mb-1.5">Nama Lengkap <span class="text-wastra-600">*</span></label>
+                                <input 
+                                    type="text" 
+                                    id="nama" 
+                                    name="nama" 
+                                    required 
+                                    placeholder="Masukkan nama lengkap Anda"
+                                    class="w-full px-4 py-3 rounded-xl bg-white border border-stone-300 text-stone-900 text-sm focus:outline-none focus:ring-2 focus:ring-wastra-600 focus:border-transparent transition-all"
+                                >
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-sm font-semibold text-stone-800 mb-1.5">Alamat Email <span class="text-wastra-600">*</span></label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required 
+                                    placeholder="contoh@email.com"
+                                    class="w-full px-4 py-3 rounded-xl bg-white border border-stone-300 text-stone-900 text-sm focus:outline-none focus:ring-2 focus:ring-wastra-600 focus:border-transparent transition-all"
+                                >
+                            </div>
+
+                            <div>
+                                <label for="telepon" class="block text-sm font-semibold text-stone-800 mb-1.5">Nomor WhatsApp (Opsional)</label>
+                                <input 
+                                    type="tel" 
+                                    id="telepon" 
+                                    name="telepon" 
+                                    placeholder="08xx-xxxx-xxxx"
+                                    class="w-full px-4 py-3 rounded-xl bg-white border border-stone-300 text-stone-900 text-sm focus:outline-none focus:ring-2 focus:ring-wastra-600 focus:border-transparent transition-all"
+                                >
+                            </div>
+
+                            <div>
+                                <label for="kategori" class="block text-sm font-semibold text-stone-800 mb-1.5">Kategori Pertanyaan</label>
+                                <select 
+                                    id="kategori" 
+                                    name="kategori"
+                                    class="w-full px-4 py-3 rounded-xl bg-white border border-stone-300 text-stone-900 text-sm focus:outline-none focus:ring-2 focus:ring-wastra-600 focus:border-transparent transition-all"
+                                >
+                                    <option value="">Pilih kategori...</option>
+                                    <option value="produk">Informasi Produk & Stok</option>
+                                    <option value="custom">Pemesanan Custom / Souvenir</option>
+                                    <option value="grosir">Pertanyaan Grosir / Reseller</option>
+                                    <option value="lainnya">Lainnya</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="pesan" class="block text-sm font-semibold text-stone-800 mb-1.5">Pesan / Produk yang Diminati <span class="text-wastra-600">*</span></label>
+                                <textarea 
+                                    id="pesan" 
+                                    name="pesan" 
+                                    rows="4" 
+                                    required 
+                                    placeholder="Tuliskan pertanyaan, nama tas yang diminati, atau detail pesanan custom Anda..."
+                                    class="w-full px-4 py-3 rounded-xl bg-white border border-stone-300 text-stone-900 text-sm focus:outline-none focus:ring-2 focus:ring-wastra-600 focus:border-transparent transition-all"
+                                ></textarea>
+                            </div>
+
+                            <button 
+                                type="submit" 
+                                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl bg-wastra-700 text-white font-semibold text-sm hover:bg-wastra-800 shadow-md transition-all"
+                            >
+                                <i data-lucide="send" class="w-4 h-4"></i>
+                                <span>Kirim Pesan Sekarang</span>
+                            </button>
+                        </form>
+
+                        <!-- Info Form -->
+                        <p class="text-xs text-stone-500 mt-6 text-center">Dengan mengirim formulir ini, Anda menyetujui kami menghubungi Anda melalui WhatsApp/Email untuk keperluan layanan pelanggan.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MAP SECTION ==================== -->
+        <section class="py-10 bg-stone-100 border-y border-stone-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-6">
+                    <h2 class="font-serif text-2xl font-bold text-stone-900">Lokasi Workshop & Galeri</h2>
+                    <p class="text-stone-600 text-sm">Kunjungi kami langsung untuk melihat koleksi lengkap dan proses pembuatan tas handmade</p>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-xl border border-stone-200 aspect-video max-w-4xl mx-auto mb-4">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.0987963308094!2d98.69785587396264!3d3.564727850459581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312e635dbedb33%3A0x4c3c3d56a9e543b5!2sSabina%20Collection%20-%20Medan!5e0!3m2!1sen!2sid!4v1794482475620!5m2!1sen!2sid" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        title="Lokasi Sabina Collection - Medan">
+                    </iframe>
+                </div>
+                <div class="text-center">
+                    <a href="https://maps.app.goo.gl/jKTt8NzacVm7YgE18" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-wastra-700 text-white font-semibold hover:bg-wastra-800 transition-colors shadow-md">
+                        <i data-lucide="map-pin" class="w-5 h-5"></i>
+                        <span>Buka Lokasi di Google Maps</span>
+                    </a>
+                    <p class="text-xs text-stone-500 mt-2">Klik tombol di atas untuk navigasi ke lokasi asli Jabutas di Medan</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-stone-900 text-stone-300 py-14 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10 border-b border-stone-800">
+                <div class="space-y-3">
+                    <span class="font-serif font-bold text-2xl text-white tracking-tight block">JABUTAS</span>
+                    <p class="text-xs uppercase tracking-widest text-wastra-400 font-semibold">By Sabina Collection · Medan</p>
+                    <p class="text-sm text-stone-400 leading-relaxed pt-1">"Wastra Tak Terbatas. Tenun Tak Terbatas."<br>Melestarikan keindahan kain tenun Ulos dan wastra Nusantara dalam setiap langkah gaya hidup modern.</p>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider">Navigasi Halaman</h4>
+                    <ul class="space-y-2 text-sm text-stone-400">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Beranda</a></li>
+                        <li><a href="about.html#sejarah" class="hover:text-white transition-colors">Tentang Kami & Sejarah</a></li>
+                        <li><a href="about.html#visi-misi" class="hover:text-white transition-colors">Visi & Misi UMKM</a></li>
+                        <li><a href="produk.html" class="hover:text-white transition-colors">Katalog Produk Tas</a></li>
+                        <li><a href="kontak.html" class="hover:text-white transition-colors">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider">Koleksi Favorit</h4>
+                    <ul class="space-y-2 text-sm text-stone-400">
+                        <li><a href="produk.html#handbag" class="hover:text-white transition-colors">Aluna Bag (Handbag Ulos)</a></li>
+                        <li><a href="produk.html#slingbag" class="hover:text-white transition-colors">Ruca Bag (Slingbag Harian)</a></li>
+                        <li><a href="produk.html#handbag" class="hover:text-white transition-colors">Sheila Bag (Tas Kerja Etnik)</a></li>
+                        <li><a href="produk.html#aksesoris" class="hover:text-white transition-colors">Clarissa Bag & Laya Pouch</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-stone-500">
+                <p>&copy; 2026 Jabutas – Tas Ulos Handmade by Sabina Collection. Hak Cipta Dilindungi.</p>
+                <p>Website Company Profile UMKM · Tugas Bisnis Digital</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BOTTOM TAB BAR (Mobile) ==================== -->
+    <nav class="bottom-tab-bar">
+        <a href="index.html" class="tab-item">
+            <i data-lucide="home" class="tab-icon"></i>
+            <span class="tab-label">Beranda</span>
+        </a>
+        <a href="about.html" class="tab-item">
+            <i data-lucide="info" class="tab-icon"></i>
+            <span class="tab-label">Tentang</span>
+        </a>
+        <a href="produk.html" class="tab-item">
+            <i data-lucide="shopping-bag" class="tab-icon"></i>
+            <span class="tab-label">Produk</span>
+        </a>
+        <a href="kontak.html" class="tab-item">
+            <i data-lucide="message-circle" class="tab-icon"></i>
+            <span class="tab-label">Kontak</span>
+        </a>
+    </nav>
+
+    <script src="js/main.js"></script>
+    </body>
+    </html>

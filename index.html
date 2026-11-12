@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jabutas · Tas Ulos Handmade & Wastra Nusantara</title>
+    <meta name="description" content="Jabutas (By Sabina Collection) - UMKM fashion lokal Medan yang memproduksi tas etnik modern dari kain tenun Ulos Batak asli. Handmade, berkualitas, berbudaya.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display untuk Heading elegan & Plus Jakarta Sans untuk body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    },
+                    colors: {
+                        wastra: {
+                            50: '#fdf8f6',
+                            100: '#f9ebe6',
+                            200: '#f3d5ca',
+                            300: '#e9b5a3',
+                            400: '#dc8b70',
+                            500: '#cc6849',
+                            600: '#b55033',
+                            700: '#973f27',
+                            800: '#7d3623',
+                            900: '#672f21',
+                            950: '#38150d',
+                        },
+                        emas: {
+                            500: '#d4af37',
+                            600: '#b89427',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased selection:bg-wastra-600 selection:text-white">
+
+    <!-- ==================== NAVBAR UTAMA (Floating Pill) ==================== -->
+    <header class="floating-navbar">
+        <div class="nav-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20">
+            <a href="index.html" class="nav-brand">
+                <img src="img/LogoJabutas.png" alt="Jabutas Logo">
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-1" aria-label="Navigasi Utama">
+                <a href="index.html" class="nav-link active">Beranda</a>
+                <div class="nav-item group">
+                    <button class="nav-link">Tentang Kami <i data-lucide="chevron-down" class="chevron"></i></button>
+                    <div class="dropdown-menu">
+                        <a href="about.html#sejarah" class="dropdown-link">
+                            <i data-lucide="book-open" class="dropdown-icon"></i>
+                            <div><p class="dropdown-title">Sejarah UMKM</p><p class="dropdown-desc">Perjalanan sejak 2017 & filosofi Ulos</p></div>
+                        </a>
+                        <a href="about.html#visi-misi" class="dropdown-link">
+                            <i data-lucide="target" class="dropdown-icon"></i>
+                            <div><p class="dropdown-title">Visi & Misi</p><p class="dropdown-desc">Tujuan & komitmen pelestarian wastra</p></div>
+                        </a>
+                        <a href="about.html#profil-pemilik" class="dropdown-link">
+                            <i data-lucide="users" class="dropdown-icon"></i>
+                            <div><p class="dropdown-title">Struktur & Pemilik</p><p class="dropdown-desc">Tim pengrajin & pendiri Sabina</p></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-item group">
+                    <button class="nav-link">Produk <i data-lucide="chevron-down" class="chevron"></i></button>
+                    <div class="dropdown-menu">
+                        <a href="produk.html#semua" class="dropdown-link">
+                            <i data-lucide="sparkles" class="dropdown-icon"></i>
+                            <div><p class="dropdown-title">Semua Koleksi Tas</p><p class="dropdown-desc">Katalog lengkap tenun nusantara</p></div>
+                        </a>
+                        <a href="produk.html#handbag" class="dropdown-link">
+                            <i data-lucide="shopping-bag" class="dropdown-icon"></i>
+                            <div><p class="dropdown-title">Tas Tangan (Handbag)</p><p class="dropdown-desc">Elegan untuk acara formal & pesta</p></div>
+                        </a>
+                        <a href="produk.html#slingbag" class="dropdown-link">
+                            <i data-lucide="briefcase" class="dropdown-icon"></i>
+                            <div><p class="dropdown-title">Tas Selempang & Harian</p><p class="dropdown-desc">Praktis untuk kuliah, kerja & hangout</p></div>
+                        </a>
+                        <a href="produk.html#aksesoris" class="dropdown-link">
+                            <i data-lucide="gift" class="dropdown-icon"></i>
+                            <div><p class="dropdown-title">Pouch & Souvenir Custom</p><p class="dropdown-desc">Cenderamata khas Sumatera Utara</p></div>
+                        </a>
+                    </div>
+                </div>
+                <a href="kontak.html" class="nav-link">Kontak</a>
+            </nav>
+
+            <a href="kontak.html" class="nav-cta hidden md:flex">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>Pesan Custom</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================== 1. HALAMAN BERANDA (HOME) ==================== -->
+        <section id="beranda" class="relative overflow-hidden pattern-ulos pt-12 pb-20 lg:pt-20 lg:pb-28 border-b border-stone-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Kolom Teks Utama Beranda -->
+                    <div class="lg:col-span-7 space-y-6 animate-fade-in-up">
+                        <!-- Badge Tagline / Slogan -->
+                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-wastra-100 border border-wastra-200 text-wastra-800 text-xs sm:text-sm font-semibold tracking-wide">
+                            <i data-lucide="award" class="w-4 h-4 text-wastra-600"></i>
+                            <span>Tagline: "Tenun Tak Terbatas — Berkelas Tanpa Batas"</span>
+                        </div>
+
+                        <!-- Judul Utama (Headline) -->
+                        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-stone-900 leading-tight">
+                            JABUTAS: Karya Tas Tenun Ulos Modern & Elegan
+                        </h1>
+
+                        <!-- Paragraf Deskripsi Singkat (Minimal 3 Kalimat) -->
+                        <p class="text-base sm:text-lg text-stone-600 leading-relaxed max-w-2xl">
+                            <strong>Jabutas (By Sabina Collection)</strong> merupakan UMKM fashion lokal asal Medan, Sumatera Utara yang berfokus pada pengembangan tas etnik modern berbahan dasar kain tenun tradisional Nusantara, khususnya Tenun Ulos Batak. Kami memadukan keindahan motif warisan leluhur dengan desain kontemporer yang fungsional agar nyaman digunakan dalam berbagai aktivitas sehari-hari maupun acara formal. Setiap tas diproduksi secara teliti (<em>handmade</em>) oleh pengrajin lokal terampil untuk memastikan kualitas jahitan yang rapi, tahan lama, dan penuh nilai budaya.
+                        </p>
+
+                        <!-- Tombol Aksi -->
+                        <div class="flex flex-wrap items-center gap-4 pt-2">
+                            <a href="produk.html" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-wastra-700 text-white font-semibold text-sm sm:text-base hover:bg-wastra-800 shadow-lg shadow-wastra-700/20 transition-all">
+                                <span>Jelajahi Koleksi Tas</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                            <a href="about.html#sejarah" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-white text-stone-800 border border-stone-300 font-semibold text-sm sm:text-base hover:bg-stone-100 transition-all">
+                                <span>Kenali Kisah Kami</span>
+                            </a>
+                        </div>
+
+                        <!-- Highlight Angka Singkat -->
+                        <div class="grid grid-cols-3 gap-4 pt-6 border-t border-stone-200/80 max-w-lg">
+                            <div>
+                                <p class="font-serif text-2xl sm:text-3xl font-bold text-wastra-700">2017</p>
+                                <p class="text-xs sm:text-sm text-stone-500">Tahun Berdiri</p>
+                            </div>
+                            <div>
+                                <p class="font-serif text-2xl sm:text-3xl font-bold text-wastra-700">35+</p>
+                                <p class="text-xs sm:text-sm text-stone-500">Model Tas Unik</p>
+                            </div>
+                            <div>
+                                <p class="font-serif text-2xl sm:text-3xl font-bold text-wastra-700">100%</p>
+                                <p class="text-xs sm:text-sm text-stone-500">Tenun Asli Lokal</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kolom Visual / Ilustrasi Produk Unggulan -->
+                    <div class="lg:col-span-5 animate-fade-in-up delay-200">
+                        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-stone-200 aspect-[4/5] max-w-md mx-auto">
+                            <img 
+                                src="img/hero-tas-ulos.jpg" 
+                                alt="Koleksi Tas Etnik Handmade Jabutas" 
+                                class="w-full h-full object-cover"
+                            >
+                            <!-- Overlay Kartu Kutipan -->
+                            <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-stone-100">
+                                <p class="text-xs font-bold uppercase tracking-wider text-wastra-600 mb-1">Wastra Tak Terbatas</p>
+                                <p class="text-sm font-medium text-stone-800">"Membawa kehangatan filosofi Ulos Batak ke dalam gaya hidup generasi masa kini."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PREVIEW PRODUK UNGGULAN (3 Produk) ==================== -->
+        <section id="produk-preview" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-xs font-bold uppercase tracking-widest text-wastra-600">Koleksi Terpilih</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 mt-2">Produk Unggulan Jabutas</h2>
+                    <p class="text-stone-600 text-base mt-2">Tiga model favorit pelanggan yang mewakili keberagaman desain dan fungsi tas etnik kami.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="produk-preview-grid">
+                    <!-- Produk 1: ALUNA BAG -->
+                    <article class="bg-white rounded-3xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col animate-fade-in-up">
+                        <div class="relative aspect-[4/3] bg-stone-200 overflow-hidden">
+                            <img 
+                                src="img/aluna-bag.jpg" 
+                                alt="Aluna Bag - Tas Tangan Ulos Sadum" 
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            >
+                            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm text-wastra-800 text-xs font-bold shadow-sm">Handbag</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div class="space-y-2.5">
+                                <div class="flex justify-between items-start gap-2">
+                                    <h3 class="font-serif text-xl font-bold text-stone-900">ALUNA BAG</h3>
+                                    <span class="font-bold text-wastra-700 text-base shrink-0">Rp 285.000</span>
+                                </div>
+                                <p class="text-sm text-stone-600 leading-relaxed">
+                                    Aluna Bag memadukan keindahan motif Tenun Ulos Sadum berwarna cerah dengan siluet tas tangan klasik yang tegas dan berkelas. Tas ini dilengkapi kompartemen utama yang luas serta tali panjang lepas-pasang sehingga sangat cocok untuk menghadiri acara pesta maupun pertemuan resmi.
+                                </p>
+                            </div>
+                            <div class="pt-3 border-t border-stone-100 flex items-center justify-between">
+                                <span class="text-xs text-stone-500">Material: Ulos Sadum & Kulit Sintetis</span>
+                                <a href="kontak.html" onclick="pilihProdukForm('ALUNA BAG')" class="text-xs font-bold text-wastra-700 hover:text-wastra-900 inline-flex items-center gap-1">
+                                    Tanya Stok <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Produk 2: RUCA BAG -->
+                    <article class="bg-white rounded-3xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col animate-fade-in-up delay-100">
+                        <div class="relative aspect-[4/3] bg-stone-200 overflow-hidden">
+                            <img 
+                                src="img/ruca-bag.jpg" 
+                                alt="Ruca Bag - Tas Selempang Etnik" 
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            >
+                            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm text-wastra-800 text-xs font-bold shadow-sm">Slingbag</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div class="space-y-2.5">
+                                <div class="flex justify-between items-start gap-2">
+                                    <h3 class="font-serif text-xl font-bold text-stone-900">RUCA BAG</h3>
+                                    <span class="font-bold text-wastra-700 text-base shrink-0">Rp 245.000</span>
+                                </div>
+                                <p class="text-sm text-stone-600 leading-relaxed">
+                                    Ruca Bag dirancang khusus bagi generasi muda yang menginginkan tas selempang ringkas dengan sentuhan etnik kontemporer untuk aktivitas harian. Bagian dalamnya dilapisi kain furing lembut dengan saku resleting rahasia yang aman untuk menyimpan ponsel, dompet, dan perlengkapan pribadi Anda.
+                                </p>
+                            </div>
+                            <div class="pt-3 border-t border-stone-100 flex items-center justify-between">
+                                <span class="text-xs text-stone-500">Material: Tenun Ulos Ragihotang</span>
+                                <a href="kontak.html" onclick="pilihProdukForm('RUCA BAG')" class="text-xs font-bold text-wastra-700 hover:text-wastra-900 inline-flex items-center gap-1">
+                                    Tanya Stok <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Produk 3: SHEILA BAG -->
+                    <article class="bg-white rounded-3xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col animate-fade-in-up delay-200">
+                        <div class="relative aspect-[4/3] bg-stone-200 overflow-hidden">
+                            <img 
+                                src="img/sheila-bag.jpg" 
+                                alt="Sheila Bag - Tas Kerja Etnik" 
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            >
+                            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm text-wastra-800 text-xs font-bold shadow-sm">Handbag</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div class="space-y-2.5">
+                                <div class="flex justify-between items-start gap-2">
+                                    <h3 class="font-serif text-xl font-bold text-stone-900">SHEILA BAG</h3>
+                                    <span class="font-bold text-wastra-700 text-base shrink-0">Rp 310.000</span>
+                                </div>
+                                <p class="text-sm text-stone-600 leading-relaxed">
+                                    Sheila Bag hadir dengan struktur bodi kokoh yang mampu menampung buku catatan, tablet, hingga perlengkapan kerja dengan rapi. Perpaduan warna hitam elegan dan aksen geometris tenun Batak memberikan kesan profesional sekaligus membanggakan budaya lokal di lingkungan kantor.
+                                </p>
+                            </div>
+                            <div class="pt-3 border-t border-stone-100 flex items-center justify-between">
+                                <span class="text-xs text-stone-500">Material: Tenun Ulos & Kanvas Tebal</span>
+                                <a href="kontak.html" onclick="pilihProdukForm('SHEILA BAG')" class="text-xs font-bold text-wastra-700 hover:text-wastra-900 inline-flex items-center gap-1">
+                                    Tanya Stok <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="produk.html" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-wastra-700 text-white font-semibold text-sm sm:text-base hover:bg-wastra-800 shadow-lg transition-all">
+                        <span>Lihat Semua Koleksi</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CTA SECTION ==================== -->
+        <section class="py-20 bg-wastra-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4">Siap Mempunyai Tas Wastra Khusus Anda?</h2>
+                <p class="text-wastra-200 text-lg mb-8 max-w-2xl mx-auto">Kami melayani pembuatan tas custom sesuai desain, ukuran, dan motif kain yang Anda inginkan. Cocok untuk hadiah pernikahan, souvenir korporat, maupun kebutuhan pribadi.</p>
+                <a href="kontak.html" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-white text-wastra-700 font-semibold hover:bg-wastra-50 transition-all shadow-lg">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    <span>Konsultasi Custom Sekarang</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-stone-900 text-stone-300 py-14 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10 border-b border-stone-800">
+                <!-- Kolom Brand -->
+                <div class="space-y-3">
+                    <span class="font-serif font-bold text-2xl text-white tracking-tight block">JABUTAS</span>
+                    <p class="text-xs uppercase tracking-widest text-wastra-400 font-semibold">By Sabina Collection · Medan</p>
+                    <p class="text-sm text-stone-400 leading-relaxed pt-1">
+                        "Wastra Tak Terbatas. Tenun Tak Terbatas."<br>
+                        Melestarikan keindahan kain tenun Ulos dan wastra Nusantara dalam setiap langkah gaya hidup modern.
+                    </p>
+                </div>
+
+                <!-- Kolom Navigasi Cepat -->
+                <div class="space-y-3">
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider">Navigasi Halaman</h4>
+                    <ul class="space-y-2 text-sm text-stone-400">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Beranda</a></li>
+                        <li><a href="about.html#sejarah" class="hover:text-white transition-colors">Tentang Kami & Sejarah</a></li>
+                        <li><a href="about.html#visi-misi" class="hover:text-white transition-colors">Visi & Misi UMKM</a></li>
+                        <li><a href="produk.html" class="hover:text-white transition-colors">Katalog Produk Tas</a></li>
+                        <li><a href="kontak.html" class="hover:text-white transition-colors">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kolom Produk Populer -->
+                <div class="space-y-3">
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider">Koleksi Favorit</h4>
+                    <ul class="space-y-2 text-sm text-stone-400">
+                        <li><a href="produk.html#handbag" class="hover:text-white transition-colors">Aluna Bag (Handbag Ulos)</a></li>
+                        <li><a href="produk.html#slingbag" class="hover:text-white transition-colors">Ruca Bag (Slingbag Harian)</a></li>
+                        <li><a href="produk.html#handbag" class="hover:text-white transition-colors">Sheila Bag (Tas Kerja Etnik)</a></li>
+                        <li><a href="produk.html#aksesoris" class="hover:text-white transition-colors">Clarissa Bag & Laya Pouch</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-stone-500">
+                <p>&copy; 2026 Jabutas – Tas Ulos Handmade by Sabina Collection. Hak Cipta Dilindungi.</p>
+                <p>Website Company Profile UMKM · Tugas Bisnis Digital</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BOTTOM TAB BAR (Mobile) ==================== -->
+    <nav class="bottom-tab-bar">
+        <a href="index.html" class="tab-item">
+            <i data-lucide="home" class="tab-icon"></i>
+            <span class="tab-label">Beranda</span>
+        </a>
+        <a href="about.html" class="tab-item">
+            <i data-lucide="info" class="tab-icon"></i>
+            <span class="tab-label">Tentang</span>
+        </a>
+        <a href="produk.html" class="tab-item">
+            <i data-lucide="shopping-bag" class="tab-icon"></i>
+            <span class="tab-label">Produk</span>
+        </a>
+        <a href="kontak.html" class="tab-item">
+            <i data-lucide="message-circle" class="tab-icon"></i>
+            <span class="tab-label">Kontak</span>
+        </a>
+    </nav>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script src="js/main.js"></script>
+    </body>
+    </html>

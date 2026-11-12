@@ -1,0 +1,399 @@
+/* ==================== CSS UNTUK JABUTAS COMPANY PROFILE ==================== */
+/* Tailwind config akan di-handle via CDN di HTML, ini untuk custom styles */
+
+/* Pola Latar Ulos */
+.pattern-ulos {
+    background-color: #fdf8f6;
+    background-image: radial-gradient(#b55033 0.75px, transparent 0.75px), radial-gradient(#b55033 0.75px, #fdf8f6 0.75px);
+    background-size: 32px 32px;
+    background-position: 0 0, 16px 16px;
+}
+
+/* ==================== FLOATING PILL NAVBAR (Desktop/Tablet) ==================== */
+.floating-navbar {
+    position: sticky;
+    top: 1rem;
+    z-index: 50;
+    margin: 0 auto;
+    max-width: calc(100% - 2rem);
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.floating-navbar.scrolled {
+    top: 0.5rem;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.floating-navbar .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem;
+    gap: 1rem;
+}
+
+.floating-navbar .nav-brand {
+    flex-shrink: 0;
+}
+
+.floating-navbar .nav-brand img {
+    height: 2.75rem; /* h-11 */
+    width: auto;
+}
+
+.floating-navbar .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.floating-navbar .nav-item {
+    position: relative;
+}
+
+.floating-navbar .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.625rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #44403c; /* stone-700 */
+    text-decoration: none;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.floating-navbar .nav-link:hover,
+.floating-navbar .nav-link:focus-visible {
+    color: #973f27; /* wastra-700 */
+    background: #fdf8f6; /* wastra-50 */
+}
+
+.floating-navbar .nav-link.active {
+    color: #fff;
+    background: #b55033; /* wastra-600 */
+    box-shadow: 0 2px 8px rgba(181, 80, 51, 0.3);
+}
+
+.floating-navbar .nav-link .chevron {
+    width: 1rem;
+    height: 1rem;
+    transition: transform 0.2s ease;
+}
+
+.floating-navbar .nav-item:hover .chevron,
+.floating-navbar .nav-item:focus-within .chevron {
+    transform: rotate(180deg);
+}
+
+/* Dropdown Menu for Floating Navbar */
+.floating-navbar .dropdown-menu {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    min-width: 15rem;
+    max-width: 16rem;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    background: #fff;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border: 1px solid #f5f5f4; /* stone-100 */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 50;
+}
+
+.floating-navbar .nav-item:hover .dropdown-menu,
+.floating-navbar .nav-item:focus-within .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.floating-navbar .dropdown-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+
+.floating-navbar .dropdown-link:hover {
+    background: #fdf8f6; /* wastra-50 */
+}
+
+.floating-navbar .dropdown-icon {
+    flex-shrink: 0;
+    width: 1rem;
+    height: 1rem;
+    color: #b55033; /* wastra-600 */
+    margin-top: 0.125rem;
+}
+
+.floating-navbar .dropdown-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1c1917; /* stone-900 */
+}
+
+.floating-navbar .dropdown-desc {
+    font-size: 0.75rem;
+    color: #78716c; /* stone-500 */
+}
+
+/* CTA Button in Floating Navbar */
+.floating-navbar .nav-cta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    border-radius: 9999px;
+    background: #973f27; /* wastra-700 */
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(181, 80, 51, 0.25);
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.floating-navbar .nav-cta:hover {
+    background: #7d3623; /* wastra-800 */
+    box-shadow: 0 4px 12px rgba(181, 80, 51, 0.35);
+    transform: translateY(-1px);
+}
+
+/* ==================== BOTTOM TAB BAR (Mobile) ==================== */
+.bottom-tab-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    display: flex;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(229, 229, 229, 0.5);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.04);
+    padding: 0.5rem 0.5rem 0.75rem;
+    padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+}
+
+.bottom-tab-bar .tab-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.125rem;
+    padding: 0.5rem 0.25rem;
+    border-radius: 1rem;
+    color: #78716c; /* stone-500 */
+    text-decoration: none;
+    transition: all 0.2s ease;
+    min-width: 0;
+}
+
+.bottom-tab-bar .tab-item:hover,
+.bottom-tab-bar .tab-item:focus-visible {
+    background: #fdf8f6; /* wastra-50 */
+    color: #b55033; /* wastra-600 */
+}
+
+.bottom-tab-bar .tab-item.active {
+    color: #b55033; /* wastra-600 */
+    background: #fdf8f6; /* wastra-50 */
+}
+
+.bottom-tab-bar .tab-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.bottom-tab-bar .tab-label {
+    font-size: 0.625rem;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+/* Mobile Menu Drawer (for submenus on mobile) */
+.mobile-menu-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 60;
+    width: 100%;
+    max-width: 20rem;
+    background: #fff;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow-y: auto;
+    /* Safe area inset for iOS */
+    padding-top: max(1rem, env(safe-area-inset-top));
+    padding-bottom: max(5rem, env(safe-area-inset-bottom) + 1rem);
+}
+
+.mobile-menu-drawer.open {
+    transform: translateX(0);
+}
+
+.mobile-menu-drawer .drawer-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.mobile-menu-drawer.open .drawer-backdrop {
+    opacity: 1;
+    visibility: visible;
+    z-index: 55;
+}
+
+/* Responsive: Hide/show based on breakpoint */
+/* Mobile: <= 768px (md breakpoint in Tailwind) */
+@media (max-width: 768px) {
+    .floating-navbar {
+        display: none !important;
+    }
+    .bottom-tab-bar {
+        display: flex !important;
+    }
+    .mobile-menu-drawer {
+        display: block !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .floating-navbar {
+        display: block !important;
+    }
+    .bottom-tab-bar {
+        display: none !important;
+    }
+    .mobile-menu-drawer {
+        display: none !important;
+    }
+}
+
+/* Transisi Sub Menu Dropdown saat Hover di Desktop */
+.group:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus visible untuk aksesibilitas */
+*:focus-visible {
+    outline: 2px solid #b55033;
+    outline-offset: 2px;
+}
+
+/* Animasi kartu produk */
+.produk-card {
+    transition: all 0.3s ease;
+}
+
+.produk-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Animasi gambar produk */
+.produk-card img {
+    transition: transform 0.5s ease;
+}
+
+.produk-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Scrollbar custom */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b55033;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #973f27;
+}
+
+/* Animasi fade-in untuk elemen */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Delay classes */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+
+/* Print styles */
+@media print {
+    header, footer, .filter-btn, button, form {
+        display: none !important;
+    }
+    .produk-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
